@@ -14,7 +14,7 @@ class Gmail
     }
     public function __clone()
     {
-        trigger_error("Operación Invalida: No puedes clonar una instancia de " . __CLASS__ . " class.", E_USER_ERROR);
+        trigger_error("Invalid Operation: Dont clone one instance of " . __CLASS__ . " class.", E_USER_ERROR);
     }
     public static function getInstance(string $email, string $passwd): self
     {
